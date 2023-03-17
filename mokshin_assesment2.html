@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: black;
+            height: 100px;
+            width: 100%;
+            color: aqua;
+            text-align: center;
+            padding-top: 50px;
+            font-size: 25px;
+            font-weight: bold;
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        My Simple Website
+        <p id="date"></p>
+    </header>
+
+    <div>
+        <p>This is the Counter Section.</p>
+        <p>When You Click the "Click Me" Button the Counter will Increase by one.</p>
+        <p>0</p>
+        <button onclick="counter()">Click Me</button>
+    </div>
+
+    <script>
+        var currentDatetime = new Date();
+        
+        var d = document.getElementById('date');
+        d.innerText = currentDatetime;
+    
+        function counter(){
+            
+        }
+    </script>
+</body>
+</html>
